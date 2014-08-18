@@ -78,6 +78,7 @@ goto :EOF
 :GS_HOME_NOT_SET
 set MSG="GS_HOME environment variable is not set"
 call :ColorText %RED% %MSG% NEWLINE
+pause
 goto :EOF
 
 :ColorText
