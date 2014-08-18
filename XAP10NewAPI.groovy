@@ -155,7 +155,7 @@ try {
     print_color("|GREEN|Press ENTER to perform a change operation|CLEAR|")
     br.readLine()
 
-    print_color("|YELLOW|* Writing one Person object with id:50, age:50 and country: UK|CLEAR|")
+    print_color("|YELLOW|* Writing one Person object with id: 50, age: 50 and country: UK|CLEAR|")
     print_color("|YELLOW|* Changes to be made: age 50->60, country \"UK\"->\"U.S.A\"|CLEAR|")
     println ""
 
