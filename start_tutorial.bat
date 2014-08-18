@@ -33,9 +33,9 @@ echo Choose one of the options for tutorial bellow:
 call :ColorText %LIGHT_GREEN% "1]"
 echo  XAP Demo - Write/Read to/from myDataGrid space
 call :ColorText %LIGHT_GREEN% "2]"
-echo  XAP Interactive Shell
-call :ColorText %LIGHT_GREEN% "3]"
 echo  XAP 10 New API
+call :ColorText %LIGHT_GREEN% "3]"
+echo  XAP Interactive Shell
 call :ColorText %LIGHT_GREEN% "0]"
 echo  exit
 set /p case= Your choice:
@@ -50,15 +50,15 @@ IF "%case%" == "1" (
         goto :loop
 )
 IF "%case%" == "2" (
+        call %GS_HOME%\tools\groovy\bin\groovy.bat XAP10NewAPI.groovy
+        pause
+        goto :loop
+)
+IF "%case%" == "3" (
             cls
             call %GS_HOME%\tools\groovy\bin\groovysh.bat
             pause
             goto :loop
-)
-IF "%case%" == "3" (
-        call %GS_HOME%\tools\groovy\bin\groovy.bat XAP10NewAPI.groovy
-        pause
-        goto :loop
 )
 
 set /p case= Invalid option, please try again:

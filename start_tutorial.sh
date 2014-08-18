@@ -34,8 +34,8 @@ echo ""
 echo "XAP Interactive Tutorial"
 echo "Choose one of the options for tutorial bellow:"
 echo -e "${LIGHT_GREEN}1]${NC} XAP Demo - Write/Read to/from myDataGrid space"
-echo -e "${LIGHT_GREEN}2]${NC} XAP Interactive Shell"
-echo -e "${LIGHT_GREEN}3]${NC} XAP 10 New API"
+echo -e "${LIGHT_GREEN}2]${NC} XAP 10 New API"
+echo -e "${LIGHT_GREEN}3]${NC} XAP Interactive Shell"
 echo -e "${LIGHT_GREEN}0]${NC} exit"
 echo -n "Your choice: "
 
@@ -44,8 +44,8 @@ read case;
 
 case "$case" in
 1 ) $GS_HOME/tools/groovy/bin/groovy XAPDemoScript.groovy ; break ;;
-2 ) clear ; $GS_HOME/tools/groovy/bin/groovysh ; break ;;
-3 ) $GS_HOME/tools/groovy/bin/groovy XAP10NewAPI.groovy ; break ;;
+2 ) $GS_HOME/tools/groovy/bin/groovy XAP10NewAPI.groovy ; break ;;
+3 ) clear ; $GS_HOME/tools/groovy/bin/groovysh ; break ;;
 0 ) break ;;
 esac
 echo -n "Invalid option, please try again: "
